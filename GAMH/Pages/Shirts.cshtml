@@ -1,0 +1,73 @@
+﻿@page
+@model GAMH.Pages.ShirtsModel
+@{
+  ViewData["Title"] = "Get Shirts";
+}
+
+<div class="row container bg-info">
+  <h1>Get A Shirt</h1>
+
+  <div class="col-md-5">
+
+    @*Order Form*@
+    <form id="contact" action="" method="post">
+      <h3>Get a shirt</h3>
+      <h4>Please fill your information and we'll contact you</h4>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.FirstName" placeholder="Your name" />
+        <span asp-validation-for="ClotheOrderModel.FirstName"></span>
+      </fieldset>
+
+      <fieldset class="sizes">
+        Small <input type="radio" asp-for="ClotheOrderModel.Size" value="S" /> &nbsp;&nbsp;&nbsp;
+        Medium <input type="radio" asp-for="ClotheOrderModel.Size" value="M" />&nbsp;&nbsp;&nbsp;
+        Large <input type="radio" asp-for="ClotheOrderModel.Size" value="L" />&nbsp;&nbsp;&nbsp;
+        XL <input type="radio" asp-for="ClotheOrderModel.Size" value="XL" />&nbsp;&nbsp;&nbsp;
+        <br />
+        <span asp-validation-for="ClotheOrderModel.Size"></span>
+      </fieldset>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.ShippingAddress" placeholder="Your Address" />
+        <span asp-validation-for="ClotheOrderModel.ShippingAddress"></span>
+      </fieldset>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.Phone" placeholder="Your Phone Number (optional)" />
+        <span asp-validation-for="ClotheOrderModel.Phone"></span>
+      </fieldset>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.Email" placeholder="Your Email Address" />
+        <span asp-validation-for="ClotheOrderModel.Email"></span>
+      </fieldset>
+      
+      <fieldset class="sizes">
+        Male <input type="radio" asp-for="ClotheOrderModel.Gender" value="Male" /> &nbsp;&nbsp;&nbsp;
+        Female <input type="radio" asp-for="ClotheOrderModel.Gender" value="Female" />&nbsp;&nbsp;&nbsp;
+        <br />
+        <span asp-validation-for="ClotheOrderModel.Gender"></span>
+      </fieldset>
+     
+
+      <br />
+
+      @*Send Button*@
+      <fieldset class="col-md-2">
+        <button name="submit" type="submit" id="contact-submit">Order Now</button>
+      </fieldset>
+    </form>
+
+  </div>
+
+  @*Images*@
+  <div class="col-md-6 col-md-offset-1">
+    <h4 style="text-align: center;">You can see here some of the products in the store</h4>
+    <img src="http://www.militaryoutdoorclothing.com/thumbnail.asp?file=assets/images/sandsst-shirtmosturewicking.jpg&maxx=500&maxy=0" width="200" />
+    <img src="https://cdn10.bigcommerce.com/s-ohvh33/products/92/images/279/IMG_0380__35735.1456780755.1280.1280.jpg?c=2" width="200" />
+    <img src="https://merinowoolrocks.com/app/uploads/2017/07/Icebreaker-Merino-Womens-Oasis-Long-Sleeve-Scoop-300x259.jpg" width="200" />
+    <img src="https://i.etsystatic.com/6488695/r/il/fdf9e7/1407739448/il_794xN.1407739448_fpcs.jpg" width="200" />
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=GAMH
+--content-root=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\CompanyManagement.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\Error.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\Index.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\OrderConfirmation.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\Pants.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\ReceivingDetails.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\Shirts.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\Shoes.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\Underwear.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\_Layout.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\_ViewImports.cshtml
+--file=C:\Users\Uksusman\source\repos\GAMH-20190517T101925Z-001\GAMH\GAMH\Pages\_ViewStart.cshtml

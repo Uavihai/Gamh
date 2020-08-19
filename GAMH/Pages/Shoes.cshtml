@@ -1,0 +1,78 @@
+﻿@page
+@model GAMH.Pages.ShoesModel
+@{
+  ViewData["Title"] = "";
+}
+
+@{
+  ViewData["Title"] = "Get Shirts";
+}
+
+<div class="row container bg-info">
+  <h1>Get A Shirt</h1>
+
+  <div class="col-md-5">
+    @*Order Form*@
+    <form id="contact" action="" method="post">
+      <h3>Contact with us</h3>
+      <h4>Please fill your information and we'll contact you</h4>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.FirstName" placeholder="Your name" />
+        <span asp-validation-for="ClotheOrderModel.FirstName"></span>
+      </fieldset>
+
+      <fieldset class="sizes">
+        Small <input type="radio" asp-for="ClotheOrderModel.Size" value="S" /> &nbsp;&nbsp;&nbsp;
+        Medium <input type="radio" asp-for="ClotheOrderModel.Size" value="M" />&nbsp;&nbsp;&nbsp;
+        Large <input type="radio" asp-for="ClotheOrderModel.Size" value="L" />&nbsp;&nbsp;&nbsp;
+        XL <input type="radio" asp-for="ClotheOrderModel.Size" value="XL" />&nbsp;&nbsp;&nbsp;
+        <br />
+        <span asp-validation-for="ClotheOrderModel.Size"></span>
+      </fieldset>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.ShippingAddress" placeholder="Your Address" />
+        <span asp-validation-for="ClotheOrderModel.ShippingAddress"></span>
+      </fieldset>
+
+      <fieldset>
+        <input asp-for="ClotheOrderModel.Phone" placeholder="Your Phone Number (optional)" />
+        <span asp-validation-for="ClotheOrderModel.Phone"></span>
+      </fieldset>
+
+      <fieldset class="sizes">
+        Male <input type="radio" asp-for="ClotheOrderModel.Gender" value="Male" /> &nbsp;&nbsp;&nbsp;
+        Female <input type="radio" asp-for="ClotheOrderModel.Gender" value="Female" />&nbsp;&nbsp;&nbsp;
+        <br />
+        <span asp-validation-for="ClotheOrderModel.Gender"></span>
+      </fieldset>
+
+      @*Send Button*@
+      <div class="form-check">
+        <span>Male/Female &nbsp;&nbsp;&nbsp;</span>
+        <input type="checkbox" class="form-check-input" id="ClotheOrderModel_IsMale" name="ClotheOrderModel.IsMale" checked="checked">
+        <label class="form-check-label" for="ClotheOrderModel_IsMale">Male</label>
+      </div>
+
+      <br />
+      <fieldset class="col-md-2">
+        <button name="submit" type="submit" id="contact-submit">Order Now</button>
+      </fieldset>
+    </form>
+  </div>
+
+  @*Images*@
+  <div class="col-md-6 col-md-offset-1">
+    <h4 style="text-align: center;">You can see here some of the products in the store</h4>
+    <img src="https://xcdn.next.co.uk/common/items/default/default/sitemaps/international/storefronts/FR-LANDING-PAGE/Shoes/womens-footwear.jpg" width="200" />
+    <img src="https://berlinbpictureblob.blob.core.windows.net/pictures/0013737_ecco-ladies-felicia-sandal-peeptoe-size-41.jpeg" width="200" />
+    <img src="https://assets.adidas.com/images/h_600,f_auto,q_auto:sensitive,fl_lossy/c61f85f69ce24e39a428a80f009b3a34_9366/Ultraboost_Shoes_Black_BB6166_07_standard.jpg" width="200" />
+    <img src="https://source-israel.co.il/40-1752-thickbox/men-flipflop-balbala.jpg" width="200" />
+  </div>
+
+</div>
+
+
+
+

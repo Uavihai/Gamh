@@ -1,0 +1,73 @@
+﻿@page
+@model GAMH.Pages.PantsModel
+@{
+  ViewData["Title"] = "";
+}
+
+
+  <div class="row container bg-info">
+    <h1>Get A pents</h1>
+    
+    <div class="col-md-5">
+      @*Order Form*@
+      <form id="contact" action="" method="post" >
+          <h3>Contact with us</h3>
+          <h4>Please fill your information and we'll contact you</h4>
+
+          <fieldset>
+            <input asp-for="ClotheOrderModel.FirstName" placeholder="Your name" />
+            <span asp-validation-for="ClotheOrderModel.FirstName"></span>
+          </fieldset>
+
+          <fieldset class="sizes">
+            Small <input type="radio" asp-for="ClotheOrderModel.Size" value="S" /> &nbsp;&nbsp;&nbsp;
+            Medium <input type="radio" asp-for="ClotheOrderModel.Size" value="M" />&nbsp;&nbsp;&nbsp;
+            Large <input type="radio" asp-for="ClotheOrderModel.Size" value="L" />&nbsp;&nbsp;&nbsp;
+            XL <input type="radio" asp-for="ClotheOrderModel.Size" value="XL" />&nbsp;&nbsp;&nbsp;
+            <br />
+            <span asp-validation-for="ClotheOrderModel.Size"></span>
+          </fieldset>
+
+          <fieldset>
+            <input asp-for="ClotheOrderModel.ShippingAddress" placeholder="Your Address" />
+            <span asp-validation-for="ClotheOrderModel.ShippingAddress"></span>
+          </fieldset>
+
+          <fieldset>
+            <input asp-for="ClotheOrderModel.Phone" placeholder="Your Phone Number (optional)" />
+            <span asp-validation-for="ClotheOrderModel.Phone"></span>
+          </fieldset>
+
+          <fieldset class="sizes">
+            Male <input type="radio" asp-for="ClotheOrderModel.Gender" value="Male" /> &nbsp;&nbsp;&nbsp;
+            Female <input type="radio" asp-for="ClotheOrderModel.Gender" value="Female" />&nbsp;&nbsp;&nbsp;
+            <br />
+            <span asp-validation-for="ClotheOrderModel.Gender"></span>
+          </fieldset>
+
+          @*Send Button*@
+          <div class="form-check">
+            <span>Male/Female &nbsp;&nbsp;&nbsp;</span>
+            <input type="checkbox" class="form-check-input" id="ClotheOrderModel_IsMale" name="ClotheOrderModel.IsMale" checked="checked">
+            <label class="form-check-label" for="ClotheOrderModel_IsMale">Male</label>
+          </div>
+
+          <br />
+          <fieldset class="col-md-2">
+            <button name="submit" type="submit" id="contact-submit">Order Now</button>
+          </fieldset>
+        </form>
+    </div>
+   
+    @*Images*@
+    <div class="col-md-6 col-md-offset-1">
+      <h4 style="text-align: center;">You can see here some of the products in the store</h4>
+      <img src="https://www.fox.co.il/filestock/img/preview_c712ab7.jpg" width="200"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqzQOZyCS5EHTdmWXOtmx51hRtVGLtA_y7aR9E8vQ7tzlA5Cd" width="200"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnW10PCa0aRaHkz4spDAoLDxuIznQgetPcERjUD2UqtWEF_HU7" width="200"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIcsDzemJWb7gjeDkpG9Tzu50Z7ffK5sgzyIs8YUMdFVJLWuC5Q" width="200"/>
+    </div>
+
+  </div>
+
+
